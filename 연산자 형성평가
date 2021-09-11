@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+//	2
+//	int a=0,b=0;
+//	scanf("%d%d",&a,&b);
+//	printf("%d / %d = %d...%d",a,b,a/b,a%b);
+	
+//	3
+//	int a=0,b=0;
+//	scanf("%d%d",&a,&b);
+//	printf("width = %d\nlength = %d\narea = %d",a+5,b*2,(a+5)*(b*2));
+	
+//	4
+//	int a,b;
+//	scanf("%d%d",&a,&b);
+//	printf("%d %d\n",++a,b--);
+//	printf("%d %d",a,b);
+	
+//	5
+//	int mk,mm,gk,gm;
+//	scanf("%d%d%d%d",&mk,&mm,&gk,&gm);
+//	if(mk>gk&&mm>gm){
+//		printf("1");
+//	}
+//	else{
+//		printf("0");
+//	}
+	
+}
