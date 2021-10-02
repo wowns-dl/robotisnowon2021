@@ -1,0 +1,71 @@
+#include <stdio.h>
+//1
+//int fun(int a,int b);
+//int main(){
+//	int a,b,c;
+//	scanf("%d%d",&a,&b);
+//	c=fun(a,b);
+//	printf("%d",c);
+//}
+//int fun(int a,int b){
+//	int c;
+//	if(a<b){
+//		c=b-a;
+//	}else{
+//		c=a-b;
+//	}
+//	return c;
+//}
+
+//2
+//int main(){
+//	int a;
+//	scanf("%d",&a);
+//	if(a>0){
+//		printf("plus");
+//	}else if(a<0){
+//		printf("minus");
+//	}else{
+//		printf("zero");
+//	}
+//}
+//3
+//int main(){
+//	int a;
+//	scanf("%d",&a);
+//	if(a%400==0){
+//		printf("윤년");
+//	}else if(a%4==0&&a%100!=0){
+//		printf("윤년");
+//	}else{
+//		printf("평년");
+//	}
+//}
+
+//4
+//int main(){
+//	int a;
+//	scanf("%d",&a);
+//	if(a==1){
+//		printf("dog");
+//	}else if(a==2){
+//		printf("cat");
+//	}else if(a==3){
+//		printf("chick");
+//	}else{
+//		printf("i don't know");
+//	}
+//}
+//int main(){
+//	int a;
+//A:	scanf("%d",&a);
+//	if(a>12){
+//		goto A;
+//	}else if(a==2){
+//		printf("28");
+//	}else if(a%2==0){
+//		printf("30");
+//	}else if(a%2==1){
+//		printf("31");
+//	}
+//}
