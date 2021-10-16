@@ -1,0 +1,58 @@
+#include <stdio.h>
+int main(){
+//	1
+//	int a;
+//	scanf("%d",&a);
+//	for(int i=1;i<=a;i++){
+//		printf("%d",i);
+//	}
+//	2
+//	int a=1,odd=0,even=0;
+//	for(;a!=0;){
+//		scanf("%d",&a);
+//		switch(a%2){
+//			case 0:
+//				even++;
+//				break;
+//			case 1:
+//				odd++;
+//				break;
+//		}
+//	}
+//	printf("odd:%d\neven:%d",odd,even);
+//	3
+//	int a=0,b=0,sum=0,avg=0;
+//	while(1){
+//		b++;
+//		scanf("%d",&a);
+//		if(a<0||a>100){
+//			goto A;
+//		}else{
+//			sum=a+sum;
+//			avg=sum/b;
+//		}
+//	}
+//A:	printf("sum : %d\navg : %d",sum,avg);
+//	4
+//	int a,b=0;
+//	for(;a!=0;){
+//		scanf("%d",&a);
+//		if(a%3!=0&&a%5!=0){
+//			b++;
+//		}
+//	}
+//	printf("%d",b);
+//	5
+	int bass,height;
+	char b;
+A:	printf("Bass = ");
+	scanf("%d",&bass);
+	printf("Height");
+	scanf("%d",&height);
+	printf(" Triangle width = %d\n",bass*height/2);
+	printf("Continue?");
+	scanf("%s",&b);
+	if(b=="y"||b=="Y"){
+		goto A;
+	}
+}
