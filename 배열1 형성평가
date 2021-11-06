@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main(){
+	/*
+	1
+	char a[10]={0,},b=0;
+	for(;b<9;b++){
+		scanf("%d",&a[b]);
+	}
+	for(int i=0;i<9;i++){
+		for(int j=9;j>0;j--){
+			a[i]=a[j];
+		}
+	}
+	for(b=0;b<9;b++){
+		printf("%d",a[b]);
+	}
+	2
+	int a[4]={0,},b;
+	for(int i=0;i<5;i++){
+		scanf("%d",&a[i]);
+	}
+	b=a[0]+a[2]+a[4];
+	printf("%d",b);
+	3
+	4*/
+	int a[100];
+	
+}
+
+
+
