@@ -11,34 +11,65 @@ def rnlcksg():
     now=now*10
 
 def one():
+    global now
     rnlcksg()
+    now+=1
+    label.config(text=str(now))
     
 def two():
+    global now
     rnlcksg()
+    now+=2
+    label.config(text=str(now))
     
 def three():
+    global now
     rnlcksg()
+    now+=3
+    label.config(text=str(now))
     
 def four():
+    global now
     rnlcksg()
+    now+=4
+    label.config(text=str(now))
     
 def five():
+    global now
     rnlcksg()
+    now+=5
+    label.config(text=str(now))
     
 def six():
+    global now
     rnlcksg()
+    now+=6
+    label.config(text=str(now))
     
 def seven():
+    global now
     rnlcksg()
+    now+=7
+    label.config(text=str(now))
     
 def eight():
+    global now
     rnlcksg()
+    now+=8
+    label.config(text=str(now))
     
 def nine():
+    global now
     rnlcksg()
+    now+=9
+    label.config(text=str(now))
     
 def zero():
+    global now
     rnlcksg()
+    now+=0
+    label.config(text=str(now))
+    
     
 
 label = tkinter.Label(window, text="0",width=5,height=5)
