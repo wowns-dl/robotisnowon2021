@@ -6,55 +6,39 @@ window.resizable(True,True)
 
 now=0
 
-def one():
+def rnlcksg():
     global now
-    now +=1
-    label.config(text=str(now))
+    now=now*10
+
+def one():
+    rnlcksg()
     
 def two():
-    global now
-    now +=1
-    label.config(text=str(now))
+    rnlcksg()
     
 def three():
-    global now
-    now +=1
-    label.config(text=str(now))
+    rnlcksg()
     
 def four():
-    global now
-    now +=1
-    label.config(text=str(now))
+    rnlcksg()
     
 def five():
-    global now
-    now +=1
-    label.config(text=str(now))
+    rnlcksg()
     
 def six():
-    global now
-    now +=1
-    label.config(text=str(now))
+    rnlcksg()
     
 def seven():
-    global now
-    now +=1
-    label.config(text=str(now))
+    rnlcksg()
     
 def eight():
-    global now
-    now +=1
-    label.config(text=str(now))
+    rnlcksg()
     
 def nine():
-    global now
-    now +=1
-    label.config(text=str(now))
+    rnlcksg()
     
 def zero():
-    global now
-    now +=1
-    label.config(text=str(now))
+    rnlcksg()
     
 
 label = tkinter.Label(window, text="0",width=5,height=5)
