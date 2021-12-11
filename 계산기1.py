@@ -72,8 +72,8 @@ def zero():
     
     
 
-label = tkinter.Label(window, text="0",width=5,height=5)
-label.place(x=128,y=0)
+label = tkinter.Label(window, text="0",width=30,height=5)
+label.place(x=50,y=0)
 
 button1 = tkinter.Button(window,text='1', overrelief="solid", width=11,height=5, command=one, repeatdelay=1000, repeatinterval=100)
 button2 = tkinter.Button(window,text='2', overrelief="solid", width=11,height=5, command=two, repeatdelay=1000, repeatinterval=100)
