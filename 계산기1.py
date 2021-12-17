@@ -6,7 +6,6 @@ window.resizable(True,True)
 
 now=0
 before=0
-answer=0
 symbol='num'
 
 def save():
@@ -14,6 +13,7 @@ def save():
     global before
     before=now
     now=0
+    beforeAnswer.config(text=str(before))
     
 def rnlcksg():
     global now
@@ -23,90 +23,90 @@ def one():
     global now
     rnlcksg()
     now+=1
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def two():
     global now
     rnlcksg()
     now+=2
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def three():
     global now
     rnlcksg()
     now+=3
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def four():
     global now
     rnlcksg()
     now+=4
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def five():
     global now
     rnlcksg()
     now+=5
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def six():
     global now
     rnlcksg()
     now+=6
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def seven():
     global now
     rnlcksg()
     now+=7
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def eight():
     global now
     rnlcksg()
     now+=8
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def nine():
     global now
     rnlcksg()
     now+=9
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def zero():
     global now
     rnlcksg()
     now+=0
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def clear():
     global now
     now=0
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def Add():
     global symbol
     save()
     symbol='add'
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def Sub():
     global symbol
     save()
     symbol='sub'
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def Mul():
     global symbol
     save()
     symbol='mul'
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def Div():
     global symbol
     save()
     symbol='div'
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def Equal():
     global now
@@ -124,13 +124,15 @@ def Equal():
         else:
             now=before/now
     symbol='num'
-    label.config(text=str(now))
+    Answer.config(text=str(now))
     
 def Period():
     pass
     
-label = tkinter.Label(window, text="0",width=30,height=5)
-label.place(x=100,y=0)
+Answer = tkinter.Label(window, text="0",width=30,height=5)
+beforeAnswer = tkinter.Label(window, text='0',width=10)
+Answer.place(x=100,y=0)
+beforeAnswer.place(x=300,y=0)
 
 button1 = tkinter.Button(window,text='1', overrelief="solid", width=11,height=5, command=one, repeatdelay=1000, repeatinterval=100)
 button2 = tkinter.Button(window,text='2', overrelief="solid", width=11,height=5, command=two, repeatdelay=1000, repeatinterval=100)
