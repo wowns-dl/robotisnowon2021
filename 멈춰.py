@@ -15,14 +15,21 @@ def outputdata():
     print("#### 출력 ####")
     for i in addrlist:
         print("{: ^3}|{: ^6}|{: ^13}|{: ^9}".format(i["idx"],i["name"],i["phone"],i["addr"]))
+        
+def inputdata():
+    pass
+
+factory = [inputdata, outputdata, searchdata, modifydata, deletedata]
 
 def run(no):
     print("{}번이 선택되었습니다!".format(no))
     if no == 6:
         print("#### 종류 ####")
         exit(0)
-    if no == 2:
-        outputdata()
+    if no in range(1, len(factory)+1):
+        factory[no-1]()
+    else :
+        print("해당 사항 없음")
         
 def main():
     while True:
